@@ -1,0 +1,133 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.background {
+  background-image: url(../images/6.jpg);
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.menu {
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 8px;
+  display: flex;
+  border-radius: 7px;
+}
+.logo a:hover {
+  color: #115a57;
+}
+.nav a {
+  padding: 5px;
+}
+.nav a:hover {
+  color: #115a57;
+}
+.sesion a:hover {
+  color: #115a57;
+}
+.main-text {
+  color: #0b2545;
+  margin: 5px;
+  font-size: 10px;
+  font-size: x-small;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.articles {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border:  black solid .5px;
+}
+.boton {
+  background-color: #0b2545;
+}
+.article a {
+  border-radius: 10px;
+  padding: 5px;
+}
+.article a:hover {
+  background-color: #0b2545;
+}
+article .boton:hover {
+  background-color: #115a57;
+}
+.navegation {
+  background-color: hsl(213, 72%, 16%);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 7px;
+}
+.navegation a {
+  padding: 0 10px 0 10px;
+  font-size: 13px;
+}
+.navegation a:hover {
+  color: #5b8e7d;
+}
+.aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot {
+  text-align: center;
+  background-color: #0b2545;
+  justify-content: space-around;
+  padding: 10px;
+}
+.foot a:hover {
+  color: #5b8e7d;
+}
+.off {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .nav {
+    flex-direction: row;
+  }
+  .off {
+    display: inline;
+  }
+  .foot {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and(min-width:800px) {
+  .section {
+  }
+  .articles {
+    display: flex;
+    flex-direction: row;
+  }
+}
