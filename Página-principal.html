@@ -1,75 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página principal</title>
-    <link rel="stylesheet" href="./Resources/CSS/estilos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script defer src="https://kit.fontawesome.com/b09e2e6b9a.js" crossorigin="anonymous"></script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://kit.fontawesome.com/b09e2e6b9a.css" crossorigin="anonymous">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página principal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://kit.fontawesome.com/b09e2e6b9a.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./Resources/autenticación/css/autenticación.css">
+  <link rel="stylesheet" href="./Resources/CSS/estilos.css" />
+  <script defer type="module" src="https://kit.fontawesome.com/b09e2e6b9a.js" crossorigin="anonymous"></script>
+  <script defer type="module" src="Resources/JS/index.js"></script>
+</head>
 
-  <body>
-    <div class="father">
-      <header class="header">
-        <div class="menu">
-          <div class="logo">
-            <a href="Página-principal.html"> <h3>Aeronex</h4> </a>
-          </div>
-          <nav class="nav">
-            <a href="#"><i class="fa-solid fa-paper-plane"></i><span class="off"> Vuelos</span></a>
-            <a href="#"><i class="fa-solid fa-check"></i><span class="off"> Reservas</span></a>
-            <a href="#"><i class="fa-solid fa-list"></i><span class="off"> Servicios</span></a>
-            <a href="#"><i class="fa-solid fa-handshake-angle"></i><span class="off"> Ayuda</span></a>
-          </nav>
-          <div class="sesion">
-            <a href="/Resources/autenticación/html/autenticación.html">Iniciar sesión</a>
-          </div>
-        </div>
-
-        <div class="main-text">
-          <h4>
-            ¡Hasta 80% de descuento! Vuela a destinos nacionales desde $68.480
-            final por trayecto!
-          </h4>
-        </div>
-      </header>
-      <section class="section">
-        <div class="articles">
-          <article class="article">
-            <h2>¿De donde viajas?</h2>
-            <input type="text" placeholder="Ingresa el origen" />
-          </article>
-          <article class="article">
-            <h2>¿A donde viajas?</h2>
-            <input type="text" placeholder="Ingresa el destino" />
-          </article>
-          <article class="article">
-          <h2>¿Qué clase deseas?  </h2>
-            <input type="text" placeholder="Turista/Business" />
-          </article>
-          <article class="boton">
-            <a href="./Resources/autenticación/html/autenticación.html" class="search">
-              Buscar</a
-            >
-          </article>
-        </div>
-      </section>
-      <footer>
-        <div class="foot">
-          <a href="#"><h4>Aeronex Airlines</h4></a>
-          <a href="#"><h4>Desarrollado por Aeronex</h4></a>
-          <a href="#"><h4>Contacta con nosotros</h4></a>
-        </div>
-      </footer>
+<body class="father">
+  <header class="header">
+    <div class="menu">
+      <div class="logo">
+        <a href="">
+          <h3>Aeronex</h3>
+        </a>
+      </div>
+      <nav class="nav">
+        <!-- <a class="item" href=""><i class="fa-solid fa-check"></i><span class="off"> Reservas</span></a>
+        <a class="item" href=""><i class="fa-solid fa-list"></i><span class="off item"> Servicios</span></a> -->
+        <ul>
+          <li class="item hide"><a href="">Vuelos</a></li>
+          <li class="item hide"><a href="">Reservas</a></li>
+          <li class="item hide"><a href="">Servicios</a></li>
+          <li class="item hide"><a href="">Ayuda</a></li>
+          <li class="item hide"><a href="">Iniciar sesión</a></li>
+          <li class="menu-icon"><i class="fa fa-bars"></i></li>
+        </ul>
+      </nav>
     </div>
-  </body>
+    <div class="main-text">
+      <h4>
+        ¡Hasta 80% de descuento! Vuela a destinos nacionales desde $68.480
+        final por trayecto!
+      </h4>
+    </div>
+  </header>
+  <main>
+  </main>
+  <footer>
+    <div class="foot">
+      <a href="#">
+        <h4>Aeronex Airlines</h4>
+      </a>
+      <a href="#">
+        <h4>Desarrollado por Aeronex</h4>
+      </a>
+      <a href="#">
+        <h4>Contacta con nosotros</h4>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
