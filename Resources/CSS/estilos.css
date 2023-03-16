@@ -1,5 +1,4 @@
 * {
-  /* font-family: 'Inter', sans-serif; */
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -7,23 +6,15 @@
 }
 a {
   text-decoration: none;
-  display: flex;
 }
-.body {
-}
-
 .father {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.header {
   background-image: url(../images/2.jpg);
   background-position: center;
-  background-attachment: contain;
   background-size: cover;
-  height: 75vh;
+  background-attachment: contain;
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
 }
 .menu {
   background-color: rgba(0, 0, 0, 0.1);
@@ -40,28 +31,22 @@ a {
 }
 .logo a {
   text-transform: uppercase;
-  text-decoration: none;
   color: white;
+  font-size: larger;
 }
 .logo a:hover {
   color: #115a57;
 }
 .nav {
-  color: black;
   padding: 10px;
-  flex-direction: row;
   width: 100%;
-  display: flex;
-  align-items: center;
+}
+.nav > ul > li {
+  list-style: none;
   justify-content: flex-end;
 }
-.nav ul {
-  justify-content: flex-end;
+.nav > ul > li > a {
   color: white;
-  text-align: center;
-  list-style: none;
-  margin-top: 3px;
-  margin-left: -40px;
 }
 .nav a:hover {
   color: #115a57;
@@ -69,43 +54,35 @@ a {
 .menu-icon {
   display: flex;
   cursor: pointer;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  color: white;
 }
 .item {
   width: 100%;
   padding: 10px;
 }
-
-.list-item:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
 .hide {
   display: none;
 }
+.off-background {
+  background-color: #ccc;
+}
+.section {
+}
 .main-text {
   display: flex;
-  align-items: center;
   padding: 5px;
   height: 25rem;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
 .main-text h4 {
   color: white;
 }
-.section {
-  height: auto;
-}
 .articles {
-  display: flex;
-  flex-direction: column;
   background-color: #0b2545;
   color: white;
-  padding: 10px;
-  width: 100%;
-  height: 50vh;
+  padding: 15px;
   justify-content: space-around;
 }
 .article {
@@ -114,13 +91,10 @@ a {
   align-items: center;
 }
 input {
-  display: flex;
-  align-items: center;
   border-radius: 15px;
   border: 0px;
   padding: 7px 5px 7px 15px;
   margin: 10px;
-  background-color: beige;
 }
 .search {
   display: flex;
@@ -128,7 +102,6 @@ input {
   border-radius: 30px;
   padding: 15px 50px 15px 50px;
   margin: 15px;
-  text-decoration: none;
   color: black;
 }
 .search:hover {
@@ -136,32 +109,29 @@ input {
 }
 .offers-in-grid {
   display: grid;
-  margin: 1rem;
-  grid-auto-rows: 200px;
-  height: 50rem;
+  height: 115vh;
 }
 .grid {
   display: grid;
+  margin: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
-  padding: 5px;
-  align-items: stretch;
 }
 .grid > article {
-  border: 1px solid beige;
+  background-color: white;
+  border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 .grid > article img {
   max-width: 100%;
 }
 .grid .text {
-  padding: 20px;
+  padding: 15px 20px;
 }
 .boton-offers {
-  justify-content: center;
   background-color: #0b2545;
   color: white;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 10px;
 }
 .foot {
@@ -169,11 +139,10 @@ input {
   background-color: #0b2545;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 .foot a {
-  text-decoration: none;
   color: white;
   padding: 5px;
 }
@@ -194,16 +163,13 @@ input {
     width: fit-content;
     padding: 0;
   }
-
   .menu-icon {
     display: none;
   }
-
   .hide {
     display: flex;
   }
 }
-
 @media screen and(min-width: 650px) {
   .header {
     flex-direction: row;
