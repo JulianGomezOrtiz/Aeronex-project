@@ -17,47 +17,44 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  await loadPage("./Resources/html/inicio.html", "main");
+  await loadPage("./resources/html/inicio.html", "main");
 
   document.querySelector(".logo").addEventListener("click", async () => {
-    await loadPage("./Resources/html/inicio.html", "main");
+    await loadPage("./resources/html/inicio.html", "main");
   });
 });
 
 async function mainMenu(option) {
   switch (option) {
     case "Vuelos":
-      await loadPage("./Resources/html/vuelos.html", "main");
+      await loadPage("./resources/html/vuelos.html", "main");
       break;
     case "Reservas":
-      await loadPage("./Resources/html/reservas.html", "main");
+      await loadPage("./resources/html/reservas.html", "main");
       break;
     case "Servicios":
-      await loadPage("./Resources/html/servicios.html", "main");
+      await loadPage("./resources/html/servicios.html", "main");
       break;
     case "Ayuda":
-      await loadPage("./Resources/html/ayuda.html", "main");
+      await loadPage("./resources/html/ayuda.html", "main");
       break;
     case "Iniciar sesión":
-      await loadPage(
-        "./Resources/autenticación/html/autenticación.html",
-        "main"
-      );
+      await loadPage("./resources/html/autenticacion.html", "main");
+      break;
+    case "Buscar":
+      await loadPage(".resources/html/autenticacion.html", "main");
       break;
     default:
-      await loadPage("./Resources/html/inicio.html", "main");
+      await loadPage("./resources/html/inicio.html", "main");
   }
 }
-
 async function loadPage(url, container) {
   try {
     const element = document.querySelector(container);
     if (!element) {
       throw new Error(`Parece que el selector '${container}' no es válido`);
     }
-
     const response = await fetch(url);
-
     if (response.ok) {
       const html = await response.text();
       element.innerHTML = html;

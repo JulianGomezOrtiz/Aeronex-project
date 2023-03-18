@@ -23,23 +23,29 @@ a {
   padding: 5px;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 .logo {
   display: flex;
-  padding: 10px;
+  padding: 15px;
   align-items: center;
 }
 .logo a {
   text-transform: uppercase;
   color: white;
-  font-size: larger;
+  font-size:larger;
 }
 .logo a:hover {
   color: #115a57;
 }
 .nav {
-  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
   width: 100%;
+}
+.nav > ul {
+  justify-content: space-around;
 }
 .nav > ul > li {
   list-style: none;
@@ -66,8 +72,6 @@ a {
 .off-background {
   background-color: #ccc;
 }
-.section {
-}
 .main-text {
   display: flex;
   padding: 5px;
@@ -84,6 +88,7 @@ a {
   color: white;
   padding: 15px;
   justify-content: space-around;
+  align-items: center;
 }
 .article {
   display: flex;
@@ -109,30 +114,33 @@ input {
 }
 .offers-in-grid {
   display: grid;
-  height: 115vh;
+  min-height: 100vh;
 }
 .grid {
   display: grid;
   margin: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.grid > article {
-  background-color: white;
+.offer {
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.3);
 }
-.grid > article img {
+.grid > div img {
   max-width: 100%;
 }
-.grid .text {
+.text {
   padding: 15px 20px;
 }
-.boton-offers {
+.button-offers {
   background-color: #0b2545;
-  color: white;
   border-radius: 25px;
-  padding: 10px;
+  border: none;
+  margin: 0 0 10px 15px;
+  padding: 8px 10px 8px 10px;
+}
+.button-offers > a {
+  color: white;
 }
 .foot {
   padding: 10px;
@@ -141,7 +149,9 @@ input {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
+
 .foot a {
   color: white;
   padding: 5px;
@@ -158,13 +168,16 @@ input {
     display: flex;
     justify-content: flex-end;
   }
-  .list-item {
+  .item {
     margin-left: 20px;
     width: fit-content;
     padding: 0;
   }
   .menu-icon {
     display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
   }
   .hide {
     display: flex;
@@ -182,7 +195,6 @@ input {
   .articles {
     flex-direction: row;
     display: flex;
-    height: 125px;
   }
   .foot {
     display: flex;
