@@ -9,58 +9,7 @@ a {
   text-decoration: none;
 }
 .father {
-  height: 100%;
-}
-.background {
-  background-image: url(../images/1.jpg);
-  background-position: center;
-  background-attachment: contain;
-  background-size: cover;
-}
-.header {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-.menu {
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.15);
-  padding: 20px;
-  margin: 8px;
-  flex-direction: row;
-  display: flex;
-  border-radius: 7px;
-}
-.logo {
-  text-transform: uppercase;
-}
-.logo a:hover {
-  color: #115a57;
-}
-.nav {
-}
-.nav a {
-  padding: 0 5px 0 5px;
-}
-.nav a:hover {
-  color: #115a57;
-}
-.sesion {
-}
-.sesion a:hover {
-  color: #115a57;
-}
-.main-text {
-  color: #0b2545;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 5px;
-  font-size: 13px;
-  display: none;
-  height: 100%;
-  justify-items: center;
-  align-items: center;
+  height: 100vh;
 }
 .section {
   display: flex;
@@ -71,21 +20,24 @@ a {
   flex-direction: column;
   font-size: 14px;
   text-align: center;
-  height: 100%;
+  height: 30rem;
+  background-color: rgba(0, 0, 0, 0.3)
 }
 
 .article {
   display: flex;
   background-color: rgba(0, 0, 0, 0.3);
-  width: auto;
+  width: 100%;
   flex-direction: column;
-  margin: 10px;
+  margin: 15px;
   border-radius: 10px;
+  height: 65vh;
+  padding: 15px;
 }
 .article h1 {
   text-align: center;
   padding: 7px;
-  color: #0b2545;
+  color: white;
 }
 .boton {
   text-align: center;
@@ -93,7 +45,9 @@ a {
 }
 .article a {
   border-radius: 10px;
-  padding: 5px;
+  padding: 7px;
+  margin: 5px;
+  width: 100%;
 }
 .article a:hover {
   background-color: #102e53;
@@ -119,49 +73,14 @@ article .boton:hover {
   flex-direction: column;
   justify-content: center;
 }
-.footer {
-}
-.foot {
-  background-color: #0b2545;
-  height: 100px;
-  align-items: center;
-  font-size: small;
-  text-align: center;
-}
-.foot a:hover {
-  color: #5b8e7d;
-}
-.off {
-  display: none;
-}
-
 @media screen and (min-width: 600px) {
   .aside {
-    display: flex;
-    flex-direction: row;
-  }
-  .header {
-    height: 10rem;
-  }
-  .nav {
-    flex-direction: row;
-  }
-  .off {
-    display: inline;
-  }
-  .foot {
-    justify-content: space-around;
     display: flex;
     flex-direction: row;
   }
 }
 
 @media screen and (min-width: 850px) {
-  .nav {
-  }
-  .main-text {
-    display: flex;
-  }
   .articles {
     display: flex;
     flex-direction: row;

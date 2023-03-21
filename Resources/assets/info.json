@@ -1,0 +1,50 @@
+[
+    {
+        "class": "card card-fat",
+        "style": "background-image:url(https://images.unsplash.com/photo-1583864442126-cf72052ced87?ixlib=rb-1.2.1&auto=format&fit=crop&w=942&q=80)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/flagged/photo-1575385230771-e7715cf5a6d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=935&q=80)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1563901935883-cb61f5d49be4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1583847323635-7ad5b93640ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1583355755103-840524969bef?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1583791121471-9d693af892c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=935&q=80)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1583796293656-9f68736c1d13?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80)"
+    },
+    {
+        "class": "card card-tall",
+        "style": "background-image:url(https://images.unsplash.com/photo-1583800949061-726e190da4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1558981396-5fcf84bdf14d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1551650257-183e681d25b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1557042204-526d7d9c3b7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1382&q=80)"
+    },
+    {
+        "class": "card",
+        "style": "background-image:url(https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80)"
+    }
+]

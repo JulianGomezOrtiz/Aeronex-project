@@ -8,78 +8,34 @@ a {
   color: white;
   text-decoration: none;
 }
-body {
-  display: flex;
-  flex-direction: column;
+.father{
+  height: 100vh;
 }
-.background {
-  background-image: url(../images/1.jpg);
-  background-position: center;
-  background-attachment: contain;
-  background-size: cover;
-}
-.header {
-  display: flex;
-}
-.menu {
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.15);
-  padding: 20px;
-  margin: 8px;
-  display: flex;
-  border-radius: 7px;
-  width: 100%;
-}
-.logo {
-  text-transform: uppercase;
-}
-.logo a:hover {
-  color: #115a57;
-}
-.nav {
-}
-.nav a {
-  padding: 0 10px 0 10px;
-}
-.nav a:hover {
-  color: #115a57;
-}
-.sesion {
-}
-.sesion a:hover {
-  color: #115a57;
-}
-.main-text {
-  color: #0b2545;
-  justify-content: center;
-  justify-content: space-around;
-  font-size: 13px;
-  display: flex;
-  height: auto;
-  margin: 5px;
-}
-
 .section {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .articles {
   display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;
-  height: auto;
   font-size: 14px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 .article {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   flex-direction: column;
-  margin: 25px;
-  padding: 15px 15px 15px 15px;
+  margin: 10px;
+  padding: 15px;
   border-radius: 10px;
+  height: 75%;
+  align-items: center;
+  justify-content: center;
 }
 .boton {
   background-color: #0b2545;
@@ -90,6 +46,7 @@ body {
   text-align: center;
   margin: 15px;
   padding: 7px;
+  width: 100%;
 }
 
 .article a:hover {
@@ -117,20 +74,6 @@ article .boton:hover {
   display: flex;
   justify-content: space-between;
 }
-
-.foot {
-  text-align: center;
-  background-color: #0b2545;
-  padding: 10px;
-  justify-content: space-around;
-}
-.foot a:hover {
-  color: #5b8e7d;
-}
-.off {
-  display: none;
-}
-
 @media screen and (min-width: 600px) {
   .section {
   }
@@ -139,17 +82,5 @@ article .boton:hover {
   }
   .article {
     width: 100%;
-  }
-  .foot {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 800px) {
-  .nav {
-    flex-direction: row;
-  }
-  .off {
-    display: inline;
   }
 }

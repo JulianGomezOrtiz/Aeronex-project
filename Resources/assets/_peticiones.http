@@ -1,0 +1,27 @@
+### Autenticar usuario
+POST http://localhost:4567/usuarios/autenticar
+Content-Type: application/json
+
+{
+}
+### Listar los usuarios
+GET http://localhost:4567/usuarios/pasajeros
+
+### agregar un usuario
+POST http://localhost:4567/usuarios
+Content-Type: application/json
+
+{
+    "identificacion": "P0022",
+    "nombres": "Julian",
+    "apellidos": "Gomez",
+    "perfil" : "ADMINISTRADOR",
+    "password": "12345"
+}
+
+### actualizar los datos de un usuario
+PUT http://localhost:4567/usuarios/P0090
+content-type: application/json
+
+{
+}

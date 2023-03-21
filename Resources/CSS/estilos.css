@@ -17,7 +17,7 @@ a {
   height: 35rem;
 }
 .menu {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: row;
   padding: 5px;
@@ -28,15 +28,13 @@ a {
 .logo {
   display: flex;
   padding: 15px;
-  align-items: center;
-}
-.logo a {
-  text-transform: uppercase;
+  align-items: center;  text-transform: uppercase;
   color: white;
   font-size: x-large;
 }
-.logo a:hover {
-  color: #115a57;
+
+.logo:hover {
+  color: #2196f3;
 }
 .nav {
   display: flex;
@@ -55,7 +53,7 @@ a {
   color: white;
 }
 .nav a:hover {
-  color: #115a57;
+  color: #2196f3;
 }
 .menu-icon {
   display: flex;
@@ -96,10 +94,14 @@ a {
   align-items: center;
 }
 input {
-  border-radius: 15px;
+  text-align: center;
+  border-radius: 30px;
+  outline: 0;
   border: 0px;
-  padding: 7px 5px 7px 15px;
+  padding: 12.5px;
   margin: 10px;
+  width: 225px;
+  font-size: 14px;
 }
 .search {
   display: flex;
@@ -110,7 +112,7 @@ input {
   color: black;
 }
 .search:hover {
-  background-color: #5b8e7d;
+  background-color: #2196f3;
 }
 .offers-in-grid {
   display: grid;
@@ -156,7 +158,7 @@ input {
   padding: 5px;
 }
 .foot a:hover {
-  color: #115a57;
+  color: #2196f3;
 }
 
 @media screen and (min-width: 600px) {
